@@ -68,9 +68,6 @@ void MD04MotorShield::setM1Speed(int speed)
 
   digitalWrite(_INA1, reverse ? LOW : HIGH );   // Make the motor coast no
   
-  if (speed == 0){
-    digitalWrite(_INA1, LOW);
-  }
 
   #ifdef MD04MOTORSHIELD_TIMER1_AVAILABLE
     if (_PWM1 == _PWM1_TIMER1_PIN && _PWM2 == _PWM2_TIMER1_PIN)
@@ -103,9 +100,6 @@ void MD04MotorShield::setM2Speed(int speed)
 
   digitalWrite(_INA2, reverse ? LOW : HIGH );   // Make the motor coast no
 
-  if (speed == 0){
-    digitalWrite(_INA2, LOW);
-  }
 
   #ifdef MD04MOTORSHIELD_TIMER1_AVAILABLE
     if (_PWM1 == _PWM1_TIMER1_PIN && _PWM2 == _PWM2_TIMER1_PIN)
