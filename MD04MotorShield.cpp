@@ -50,7 +50,7 @@ void MD04MotorShield::init()
     }
   #endif
 }
-// Set speed for motor 1, speed is a number betwenn -400 and 400
+// Set speed for motor 1, speed is a number between -400 and 400
 void MD04MotorShield::setM1Speed(int speed)
 {
   unsigned char reverse = 0;
@@ -83,7 +83,7 @@ void MD04MotorShield::setM1Speed(int speed)
   #endif
 }
 
-// Set speed for motor 2, speed is a number betwenn -400 and 400
+// Set speed for motor 2, speed is a number between -400 and 400
 void MD04MotorShield::setM2Speed(int speed)
 {
   unsigned char reverse = 0;
